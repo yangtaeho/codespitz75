@@ -1,0 +1,12 @@
+const list1 = new TaskList("s75");
+const item1 = new TaskItem("3강교안작성");
+list1.add(item1);
+const sub1 = new TaskItem("코드정리");
+item1.add(sub1);
+const subsub1 = new TaskItem("subsub1");
+sub1.add(subsub1);
+list1.getResult(Task.title);
+// const todo = new DomRenderer(list1, sel("#todo"));
+const consoleRes = [];
+const todo = new ConsoleRenderer(list1, consoleRes);
+todo.render();

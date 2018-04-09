@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>75-2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="Github.js"></script>
+  <!-- <script src="MdLoader.js"></script> -->
+  <!-- <script src="ImageLoader.js"></script> -->
+  <script>
+  const s75img = new ImageLoader('hikaMaeng', 'codespitz75', document.querySelector('#a'));
+  s75img.load('einBig.png');
+  // const s75md = new MdLoader('hikaMaeng', 'codespitz75', document.querySelector('#b'));
+  // s75md.load('README.md');
+
+  const el =v=>document.querySelector(v);
+  // const loader = new Github('hikaMaeng', 'codespitz75');
+  // const parseMD =v=>el('#b');
+  //img
+  // const img =v=>el('#a').src = 'data:text/plain;base64,' + v;
+  // loader.parser = img;
+  // loader.load('einBIg.png');
+
+  // const loader = new Github('hikaMaeng', 'codespitz75');
+  // const img =(v,el)=>el.src = 'data:text/plain:base64,' + v;
+  // loader.setParser(img, el('#a'));
+  // loader.load('einBIg.png');
+  // loader.setParser(md, el('#b'));
+  // loader.load('README.md');
+
+
+
+
+  // 완성된전략클래스를이용하면다음과같이작성할수있다.
+  // main
+  // const loader = new Github('hikaMaeng', 'codespitz75');
+  // const img = new ImageLoader('#a');
+  // loader.setParser(img);
+  // loader.load('einBig.png');
+  // const md = new MdLoader('#b');
+  // loader.setParser(md);
+  // loader.load('README.md');
+  </script>
+</head>
+<body>
+  <div >
+    <img id="a">
+
+  </div>
+  <div id="b">
+  </div>
+</body>
+</html>
